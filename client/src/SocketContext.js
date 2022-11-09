@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 const SocketContext = React.createContext();
 
-const socket = io("http://localhost:5000");
+const socket = io("https://react-video-call-application.herokuapp.com/");
 
 const ContextProvider = ({ children }) => {
   const [stream, setStream] = useState(null);
